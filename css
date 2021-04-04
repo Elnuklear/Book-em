@@ -1,0 +1,33 @@
+body {
+    background: url('../Images/pexels-luis-quintero-1370545.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    color: gainsboro;
+    font-size: 15px;
+    font-family: monospace;
+
+}
+
+main {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-rows: auto;
+}
+
+section {
+    display: grid;
+    background-color:#22aaff4d;
+    grid-template-rows: auto;
+    justify-content: center;    
+}
+
+fieldset, section {
+    border-radius: 3%;
+}
+
+#submit {
+    background-color: #000000;
+    color: gainsboro;
+}
