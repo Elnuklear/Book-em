@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="survey.css" type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book'em</title>
+</head>
+<body>
+    <main>
+        
+    <h1 id="title">Bookings For the Liveliest Shows</h1>
+    <p id="description">Support your favorite artist by scheduling an online performance!</p>
+    <form id="survey-form">
+        <section>
+
+            <fieldset>
+                <legend>Contact Details</legend>
+            <label id="name-label">Name:<br />
+                <input id="name" placeholder="Trap Star" required/>
+                </label>
+                <br />
+            <label id="email-label">Email:<br/>
+                <input id="email" type="email" placeholder="trap.star@email.com" required/>
+            </label>
+            <br />
+            <label id="number-label">Age:<br />
+                <input id="number" type="number" min="18" max="123" placeholder="18" />
+                </label>
+                <br />
+                 <label id="artist-label">Artist:<br />
+                <input id="artist" placeholder="J. Cole" required/>
+                </label>
+                <br />
+            <label for="date" id="date-label">Date:<br />
+                <input id="date" type="date" />
+                </label>
+                <br />
+            </fieldset>
+            
+            <br />
+            <p>Please choose your preference.</p>
+            <select id="dropdown">
+                <option value="bronze" selected="selected">Bronze - 1 live song (typically 3 - 5 minutes)</option>
+                <option value="silver">Silver - 6 live songs (typically 20 - 30 minutes)</option>
+                <option value="gold" >Gold - 12 live songs (1 hour)</option>           
+                <option value="platinum">Platinum - A lit 2 hour performance!!!</option>
+            </select>
+            <br />
+            <p>Specify a particular genre.</p>
+            <label for="hip-hop"><input type="radio" name="genre" id="hip-hop" value="hip-hop" />Hip-hop</label>
+            <label for="trap-music"><input type="radio" name="genre" id="trap-music" value="trap-music" />Trap Music</label>
+            <label for="r&b"><input type="radio" name="genre" id="r&b" value="r&b" />R&B</label>
+            <br />
+            <p>Choose a setting.</p>
+            <label><input type="checkbox" value="intimate" />Intimate</label>
+            <label><input type="checkbox" value="live-band" />Live Band</label>
+            <label><input type="checkbox" value="personal-music-video" />Personal Music Video</label>
+            <label><input type="checkbox" value="acapella" />Acapella</label>
+            <br/>
+            <p>Comments or suggestions?</p>
+            <textarea placeholder="Enter comments here..."></textarea>
+            <input id="submit" type="submit" />
+        </section>
+    </main>
+    </form>
+</body>
+</html>
